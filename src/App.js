@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { MyComponent } from './components/MyComponent';
+import { SecondComponent } from './components/SecondComponent';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <p>
           Estructura inicial del proyecto y limpia.
         </p>
+        <SecondComponent />
         <MyComponent />
       </header>
     </div>

@@ -12,6 +12,8 @@ export const MyComponent = () => {
     linkedinProfile: "https://www.linkedin.com/in/carlos-caro"
   }
 
+  console.log(student);
+
   return (
     <div>
         <hr/>
