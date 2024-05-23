@@ -3,8 +3,18 @@ import './App.css';
 import { MyComponent } from './components/MyComponent';
 import { SecondComponent } from './components/SecondComponent';
 import { ThirdComponent } from './components/ThirdComponent';
+import { Child } from './components/Child';
+import { useState } from 'react';
 
 function App() {
+
+  const [name, setName] = useState("Lina");
+  const [message, setMessage] = useState("");
+
+  const addMessage = (message) => {
+    console.log(message);
+    setMessage(message);
+  }
 
   const medicalRecord = {
     height: "160",
@@ -19,8 +29,11 @@ function App() {
         <p>
           Estructura inicial del proyecto y limpia.
         </p>
+        <h2>Mensaje del hijo: </h2>
+        <p>{ message }</p>
+        <Child name={name} setName={setName} addMessage={addMessage}/>
         <SecondComponent />
-        <ThirdComponent 
+        <ThirdComponent
           name="Inés"
           lastName="Oliveros"
           card={medicalRecord}
@@ -32,3 +45,6 @@ function App() {
 }
 
 export default App;
+
+
+

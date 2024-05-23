@@ -1,19 +1,23 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export const ThirdComponent = (props) => {
-
-    console.log(props)
+export const ThirdComponent = ({ name, lastName, card }) => {
 
   return (
     <div>
         <h2>Comunicación entre Componentes</h2>
         <ul>
-            <li>{ props.name }</li>
-            <li>{ props.lastName }</li>
-            <li>{ props.card.allergies }</li>
+            <li>{ name }</li>
+            <li>{ lastName }</li>
+            <li>{ card.height }</li>
         </ul>
     </div>
   )
 }
 
-// Hooks - eventos
+ThirdComponent.propTypes = {
+  name: PropTypes.string,
+  lastName: PropTypes.string,
+  card: PropTypes.object
+}
+
