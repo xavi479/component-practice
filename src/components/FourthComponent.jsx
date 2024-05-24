@@ -10,6 +10,14 @@ export const FourthComponent = () => {
     alert("Has hecho doble click al botón");
   }
 
+  const handleMouseEnter = (e) => {
+    console.log("Has entrado a mi caja con el Mouse!! ")
+  }
+
+  const handleMouseLeave = (e) => {
+    console.log("Has salido de mi caja!! ")
+  }
+
   return (
     <div>
         <h2>Eventos en React</h2>
@@ -27,7 +35,15 @@ export const FourthComponent = () => {
         <div>
           <button onDoubleClick={ handleDoubleClicked }>Haz doble click!!</button>
         </div>
+
         {/* Evento Mouse Enter y Mouse Leave */}
+        <hr />
+        <div id="box"
+          onMouseEnter={ handleMouseEnter }
+          onMouseLeave={ handleMouseLeave }
+        >
+          <p>Pasa el Mouse por encima!!!</p>
+        </div>
         {/* Evento Focus y Blur */}
 
     </div>
