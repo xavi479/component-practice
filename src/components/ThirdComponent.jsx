@@ -4,17 +4,17 @@ import ProntTypes from 'prop-types'
 export const ThirdComponent = ({name, lastName,card}) => {
 
   return (
-    <div>
+   <div>
       <h2>Comunicación entre componentes</h2>
       <ul>
         <li>{ name }</li>
         <li>{ lastName }</li>
         <li>{ card.height }</li>
-
       </ul>
-    </div>
+   </div>
   )
 }
+
 
 ThirdComponent.prontTypes = {
   name: ProntTypes.string,

@@ -1,15 +1,16 @@
 import React from 'react'
 
-export const Chaild = ({ name, setname, addMessage}) => {
+export const Child = ({ name, setName, addMessage }) => {
 
-const sendMessage = () => {
-    addMessage("Este es el mensaje del hijo");
-}
+  const sendMessage = () => {
+    addMessage("Este es el mensaje del HIJO");
+  }
 
-const changeName = () => {
-    setname("Nuevo Nombre Hijo");
-}
-return (
+  const changeName = () => {
+    setName("Nuevo Nombre Hijo");
+  }
+
+  return (
     <div>
       {name}
       <div>
@@ -23,5 +24,3 @@ return (
     </div>
   )
 }
-
-export default Chaild

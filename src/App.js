@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import MyComponents from './components/MyComponents';
+import MyComponent from './components/MyComponents';
 import SecondComponent from './components/SecondComponent';
 import ThirdComponent from './components/ThirdComponent';
-import Chaild from './components/Chaild';
+import Child from './components/Chaild';
 import { useState } from 'react';
-import { FourthComponent } from './components/FourthComponent' ;
+import { FourthComponent } from './components/FourthComponen';
 
 function App() {
 
@@ -29,26 +29,28 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Estructura inicial del proyecto y limpia.
-          <dir>
+        </p>
+        <div>
           <hr />
           <FourthComponent />
           <hr />
-          </dir>
-        </p>
-        <h2>Mensaje del hijo</h2>
-        <p> { message } </p>
-        <Chaild name={name} setName={setName} addMessage={addMessage}/>
-
+        </div>
+        <h2>Mensaje del hijo: </h2>
+        <p>{ message }</p>
+        <Child name={name} setName={setName} addMessage={addMessage}/>
         <SecondComponent />
-        <ThirdComponent 
-          name="Oscar"
-          lastName="López"
+        <ThirdComponent
+          name="Inés"
+          lastName="Oliveros"
           card={medicalRecord}
         />
-        <MyComponents />
+        <MyComponent />
       </header>
     </div>
   );
 }
 
 export default App;
+
+
+
