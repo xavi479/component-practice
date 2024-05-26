@@ -3,7 +3,7 @@ import './App.css';
 import MyComponent from './components/MyComponents';
 import SecondComponent from './components/SecondComponent';
 import ThirdComponent from './components/ThirdComponent';
-import Child from './components/Chaild';
+import Child from './components/Child';
 import { useState } from 'react';
 import { FourthComponent } from './components/FourthComponen';
 
@@ -40,8 +40,8 @@ function App() {
         <Child name={name} setName={setName} addMessage={addMessage}/>
         <SecondComponent />
         <ThirdComponent
-          name="Inés"
-          lastName="Oliveros"
+          name="viviana"
+          lastName="Vega Toledo"
           card={medicalRecord}
         />
         <MyComponent />
