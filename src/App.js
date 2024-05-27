@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import MyComponent from './components/MyComponents';
-import SecondComponent from './components/SecondComponent';
-import ThirdComponent from './components/ThirdComponent';
-import Child from './components/Child';
+import { MyComponent } from './components/MyComponent';
+import { SecondComponent } from './components/SecondComponent';
+import { ThirdComponent } from './components/ThirdComponent';
+import { Child } from './components/Child';
 import { useState } from 'react';
-import { FourthComponent } from './components/FourthComponen';
+import { FourthComponent } from './components/FourthComponent';
 
 function App() {
 
